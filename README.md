@@ -29,5 +29,5 @@ If valid:
    ↓  
 [execute_second_pass()](https://github.com/alice-ruv/Assembler/blob/main/assembler/secondPass.c#L21)  
    ↓  
-Optionally create output data files
+Complete filling output data files
 
