@@ -6,3 +6,26 @@ An assembler program that translates custom assembly statements into machine cod
 * **Platform:** Linux
 * **Tools:** Custom CPU simulator, GCC (GNU Compiler Collection)
 * **Key Concepts:** Assembly language, Machine code, CPU architecture, Memory management (registers and RAM)
+
+## Flowchart
+
+[main()](https://github.com/alice-ruv/Assembler/blob/main/assembler/assembler.c#L6)  
+   ↓  
+[process_files()](https://github.com/alice-ruv/Assembler/blob/main/assembler/assemblerHandler.c#L88)  
+   ↓  
+[init_reserved_word_db()](https://github.com/alice-ruv/Assembler/blob/main/assembler/reservedWordDB.c#L32)  
+   ↓  
+Process `file.as`  
+   ↓  
+[execute_first_pass()](https://github.com/alice-ruv/Assembler/blob/main/assembler/firstPass.c#L27)  
+   ↓  
+If valid:  
+   - Create output file: `file.ob`  
+   - Optionally create output data files: `file.ent`, `file.ext`  
+   ↓  
+[execute_second_pass()](https://github.com/alice-ruv/Assembler/blob/main/assembler/secondPass.c#L21)  
+   ↓  
+Complete filling output data files
+
+
+
