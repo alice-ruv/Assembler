@@ -11,9 +11,13 @@ An assembler program that translates custom assembly statements into machine cod
 
 [main()](https://github.com/alice-ruv/Assembler/blob/main/assembler/assembler.c#L6)  
    ↓  
+Gets file names from the command line (without `.as` ending)  
+   ↓  
 [process_files()](https://github.com/alice-ruv/Assembler/blob/main/assembler/assemblerHandler.c#L88)  
    ↓  
 [init_reserved_word_db()](https://github.com/alice-ruv/Assembler/blob/main/assembler/reservedWordDB.c#L32)  
+   ↓  
+[process_file()](https://github.com/alice-ruv/Assembler/blob/main/assembler/assemblerHandler.c#L88)  
    ↓  
 Process `file.as`  
    ↓  
@@ -25,7 +29,5 @@ If valid:
    ↓  
 [execute_second_pass()](https://github.com/alice-ruv/Assembler/blob/main/assembler/secondPass.c#L21)  
    ↓  
-Complete filling output data files
-
-
+Optionally create output data files
 
